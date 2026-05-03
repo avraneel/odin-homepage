@@ -30,3 +30,8 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* mobile layout */
+
+@media (max-width: 500px) {
+}
