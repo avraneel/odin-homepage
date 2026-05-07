@@ -31,6 +31,19 @@
   font-display: swap;
 }
 
+body {
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  background-image: url("./assets/icons/avatar.jpg");
+}
+
 /* mobile layout */
 
 @media (max-width: 500px) {
