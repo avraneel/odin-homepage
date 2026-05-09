@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 40px;
 }
 
 .content {
@@ -82,7 +82,7 @@ img {
 
 p {
   font-family: "Roboto";
-  color: #3a3a3a;
+  color: #565656;
 }
 
 .project {
@@ -97,6 +97,11 @@ p {
 
 .project:hover {
   box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-me > p {
+  font-size: 20px;
+  line-height: 2rem;
 }
 
 .image {
@@ -166,12 +171,6 @@ address > a {
 /* mobile layout */
 
 @media (max-width: 500px) {
-  .work {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-
   h2 {
     text-align: center;
   }
@@ -182,13 +181,7 @@ address > a {
     gap: 2em;
   }
 
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-
-  .container {
+  .work {
     display: flex;
     flex-direction: column;
     gap: 2em;
