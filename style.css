@@ -96,6 +96,10 @@ p {
     "desc desc";
 }
 
+.card-content h3 {
+  grid-area: title;
+}
+
 .card-content p {
   grid-area: desc;
   margin-bottom: 2em;
@@ -233,6 +237,7 @@ address > a {
   }
 
   .card-toolbar {
+    grid-area: links;
     justify-content: end;
     gap: 0;
     margin-top: 0;
