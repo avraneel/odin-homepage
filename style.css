@@ -208,10 +208,10 @@ address > a {
     margin-top: 1em;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
   }
 
-  .toolbar img {
+  .header-toolbar img {
     max-height: 32px;
   }
 
@@ -220,7 +220,20 @@ address > a {
     flex-direction: column;
   }
 
+  .footer-toolbar {
+    margin-top: 2em;
+    margin-bottom: 6em;
+  }
+
+  .footer-toolbar img {
+    max-height: 48px;
+  }
+
   .avatar-footer img {
     transform: scaleY(100%);
+  }
+
+  footer h2 {
+    margin-top: 1em;
   }
 }
