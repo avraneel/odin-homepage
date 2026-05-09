@@ -155,6 +155,9 @@ footer {
   margin: 0;
   color: #fff;
   background-color: #128fb1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer p {
@@ -200,11 +203,6 @@ address > a {
     display: flex;
     flex-direction: column;
     gap: 2em;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
   }
 
   .phone-mail img {
@@ -254,11 +252,12 @@ address > a {
     max-height: 48px;
   }
 
-  .avatar-footer img {
-    transform: scaleY(100%);
-  }
-
   footer h2 {
     margin-top: 1em;
+  }
+
+  footer img {
+    /* there's a very tiny tiny slither of white as image is inline, so make it block */
+    display: block;
   }
 }
