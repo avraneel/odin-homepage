@@ -263,7 +263,7 @@ p {
   }
 
   .footer__image {
-    object-fit: contain;
+    height: 100%;
     display: block;
     padding: 1em;
   }
