@@ -64,6 +64,12 @@ h2 {
 
 .avatar {
   position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px black;
@@ -72,12 +78,6 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.name {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
 }
 
 p {
@@ -143,22 +143,27 @@ p {
 
 footer {
   margin: 0;
-  padding: 2em;
   color: #fff;
   background-color: #128fb1;
-  display: grid;
 }
 
 footer p {
+  margin-top: 1em;
   color: white;
 }
 
 footer > p {
-  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
+  color: white;
+  font-size: 20px;
   margin-bottom: 1em;
 }
 
 address {
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: "Roboto";
   font-style: normal;
 }
@@ -171,6 +176,10 @@ address > a {
 /* mobile layout */
 
 @media (max-width: 500px) {
+  h1 {
+    transform: scale(100%);
+  }
+
   h2 {
     text-align: center;
   }
@@ -185,5 +194,23 @@ address > a {
     display: flex;
     flex-direction: column;
     gap: 2em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-mail img {
+    display: none;
+  }
+
+  .phone-mail a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .avatar-footer img {
+    transform: scaleY(100%);
   }
 }
