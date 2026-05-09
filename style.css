@@ -218,6 +218,7 @@ address > a {
   .about-me {
     display: flex;
     flex-direction: column;
+    gap: 1em;
   }
 
   .footer-toolbar {
