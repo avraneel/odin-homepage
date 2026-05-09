@@ -257,7 +257,7 @@ address > a {
   }
 
   footer img {
-    /* there's a very tiny tiny slither of white as image is inline, so make it block */
+    /* there's a very tiny tiny line of white as image is inline, so make it block */
     display: block;
   }
 }
