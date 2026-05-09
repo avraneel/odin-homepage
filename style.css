@@ -91,6 +91,14 @@ p {
   padding: 1.1rem;
   display: grid;
   gap: 1em;
+  grid-template-areas:
+    "title links"
+    "desc desc";
+}
+
+.card-content p {
+  grid-area: desc;
+  margin-bottom: 2em;
 }
 
 .project:hover {
@@ -205,9 +213,12 @@ address > a {
   }
 
   .toolbar {
-    margin-top: 1em;
     display: flex;
     justify-content: center;
+  }
+
+  .header-toolbar {
+    margin-top: 1em;
     gap: 2em;
   }
 
@@ -221,9 +232,17 @@ address > a {
     gap: 1em;
   }
 
+  .card-toolbar {
+    justify-content: end;
+    gap: 0;
+    margin-top: 0;
+    max-height: 32px;
+  }
+
   .footer-toolbar {
     margin-top: 2em;
     margin-bottom: 6em;
+    gap: 2em;
   }
 
   .footer-toolbar img {
