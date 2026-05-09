@@ -1,0 +1,177 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Playfair Display";
+  src:
+    url("./assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("./assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  padding: 3em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.avatar {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+p {
+  font-family: "Roboto";
+  color: #3a3a3a;
+}
+
+.project {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 1.1rem;
+}
+
+.project:hover {
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  max-width: 100%;
+  object-fit: cover;
+  background-color: #fa7ade;
+  height: 150px;
+}
+
+.image1 {
+  background-color: rgb(172, 172, 255);
+}
+
+.image2 {
+  background-color: #ebac2f;
+}
+
+.image3 {
+  background-color: #5c9450;
+}
+
+.image4 {
+  background-color: #c67399;
+}
+
+.image5 {
+  background-color: #4b94dc;
+}
+
+.image6 {
+  background-color: #569450;
+}
+
+.project-list {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+footer {
+  margin: 0;
+  padding: 2em;
+  color: #fff;
+  background-color: #128fb1;
+  display: grid;
+}
+
+footer p {
+  color: white;
+}
+
+footer > p {
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+
+address {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+address > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* mobile layout */
+
+@media (max-width: 500px) {
+  h2 {
+    text-align: center;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
