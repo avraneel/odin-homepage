@@ -17,6 +17,8 @@ select {
   font-size: inherit;
 }
 
+picture,
+source,
 img {
   display: block;
   max-width: 100%;
@@ -67,7 +69,7 @@ h2 {
   position: relative;
 }
 
-.avatar__title {
+.avatar__name {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -79,10 +81,6 @@ h2 {
   font-size: 48px;
 }
 
-.avatar img {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.462);
-}
-
 .about__toolbar {
   margin-top: 1em;
   gap: 2em;
@@ -91,6 +89,10 @@ h2 {
 p {
   font-family: "Roboto";
   color: #565656;
+}
+
+.work {
+  margin: 2em;
 }
 
 .project {
@@ -120,7 +122,7 @@ p {
 }
 
 .about {
-  margin: 2rem;
+  margin: 2em;
 }
 
 .about__text {
@@ -192,13 +194,28 @@ p {
 .footer__toolbar {
   justify-content: center;
   gap: 2em;
+  margin-bottom: 6em;
 }
 
 /* mobile layout */
 
-@media (max-width: 500px) {
+@media (width < 500px) {
+  .content {
+    background-image: linear-gradient(
+      150deg,
+      #128fb1 0%,
+      #128fb1 10%,
+      #ffffff 0%
+    );
+    filter: drop-shadow(30px 10px 4px #3a3a3a);
+  }
+
   h2 {
     text-align: center;
+  }
+
+  .avatar__image {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.462);
   }
 
   .about {
@@ -211,6 +228,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2em;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 
   .footer__address-icon {
@@ -258,20 +279,20 @@ p {
   }
 
   .footer__image {
-    /* there's a very tiny tiny line of white as image is inline, so make it block */
-    display: block;
+    max-width: 100vw;
+    object-fit: cover;
   }
 }
 
 /* Tablet Layout */
-@media (min-width: 500px) and (max-width: 1000px) {
-  .avatar__name {
+@media (width >= 500px) and (width < 1000px) {
+  .about__name {
     top: 30px;
     left: 45%;
     font-size: 26px;
   }
 
-  .avatar__image {
+  .about__image {
     float: left;
     padding: 2em;
   }
@@ -280,13 +301,8 @@ p {
     justify-content: end;
   }
 
-  .footer__icons {
-    max-height: 48px;
-  }
-
-  .footer__image {
-    height: 100%;
-    display: block;
-    padding: 1em;
+  .footer {
+    flex-direction: row;
+    align-items: center;
   }
 }

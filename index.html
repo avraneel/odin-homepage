@@ -16,16 +16,16 @@
         <div class="avatar">
           <picture class="avatar__image">
             <source
-              media="(width < 480px)"
-              srcset="./assets/img/avatar-600h.jpg"
+              media="(width < 500px)"
+              srcset="./assets/img/avatar-500w.jpg"
             />
             <source
-              media="(width >= 480px)"
-              srcset="./assets/img/avatar-400h.jpg"
+              media="(width >= 500px)"
+              srcset="./assets/img/avatar-400w.jpg"
             />
-            <img src="./assets/img/avatar-600h.jpg" alt="avatar" />
+            <img src="./assets/img/avatar-500w.jpg" alt="avatar" />
           </picture>
-          <h1 class="avatar__title heading">Ashley Williams</h1>
+          <h1 class="avatar__name heading">Ashley Williams</h1>
         </div>
         <div class="about__body container">
           <h2 class="about__title heading">About Me</h2>
@@ -67,8 +67,8 @@
           </div>
         </div>
       </header>
-      <main>
-        <div class="work container margin">
+      <main class="work">
+        <div class="work container">
           <header>
             <h2 class="work__title heading">My Work</h2>
           </header>
@@ -203,15 +203,22 @@
               <div class="footer__phone">
                 <img
                   class="footer__address-icon"
-                  src=""
+                  src="./assets/icons/phone.svg"
                   alt="phone"
-                  srcset=""
+                  width="20px"
+                  height="20px"
                 />
                 <a href="555-555-5555">555-555-5555</a>
               </div>
               <br />
               <div class="footer__mail">
-                <img class="footer__address-icon" src="" alt="mail" srcset="" />
+                <img
+                  class="footer__address-icon"
+                  src="./assets/icons/email.svg"
+                  alt="mail"
+                  width="20px"
+                  height="20px"
+                />
                 <a href="mailto:ashleywilliams.is.not.real@gmail.com"
                   >ashleywilliams.is.not.real@gmail.com</a
                 >
@@ -220,38 +227,39 @@
           </address>
           <div class="footer__toolbar toolbar">
             <img
+              class="footer__icons"
               src="./assets/icons/github.svg"
               alt="github"
               width="48px"
               height="48px"
-              class="footer__icons"
             />
             <img
+              class="footer__icons"
               src="./assets/icons/linkedin.svg"
               alt="linkedin"
-              srcset=""
-              class="footer__icons"
+              width="48px"
+              height="48px"
             />
             <img
+              class="footer__icons"
               src="./assets/icons/x.svg"
               alt="X"
               srcset=""
               width="48px"
               height="48px"
-              class="footer__icons"
             />
           </div>
         </div>
         <picture class="footer__image">
           <source
-            media="(width < 980px)"
-            srcset="./assets/img/avatar-600h.jpg"
+            media="(width < 1000px)"
+            srcset="./assets/img/footer-500w.jpg"
           />
           <source
-            media="(width >= 980px)"
-            srcset="./assets/img/avatar-400h.jpg"
+            media="(width >= 1000px)"
+            srcset="./assets/img/footer-400w.jpg"
           />
-          <img src="./assets/img/avatar-600h.jpg" alt="avatar" />
+          <img src="./assets/img/footer-500w.jpg" alt="avatar" />
         </picture>
       </footer>
     </div>
