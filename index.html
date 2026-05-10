@@ -9,16 +9,14 @@
   <body>
     <div class="content">
       <header class="about">
-        <div class="profile container margin">
           <div class="avatar">
-            <img
-              src="./assets/img/avatar.jpg"
-              alt="avatar"
-              srcset=""
-              class="avatar-image"
-            />
-            <div class="name">
-              <h1>Ashley Williams</h1>
+            <picture class="avatar__image">
+              <source media="(width < 480px)" srcset="./assets/img/avatar-600h.jpg">
+              <source media="(width >= 480px)" srcset="./assets/img/avatar-400h.jpg">
+              <img src="./assets/img/avatar-600h.jpg" alt="avatar">
+            </picture>
+            <div class="avatar__name">
+              <h1 class="avatar__title heading">Ashley Williams</h1>
             </div>
           </div>
           <div class="about__body container">
@@ -27,26 +25,25 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
               tenetur quae sed ex quasi. Inventore, perferendis! Architecto
               cupiditate asperiores nemo reiciendis ullam at porro qui
-              veritatis? Perspiciatis eum magni reprehenderit.
+              veritatis? Perspiciatis eum magni reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea quaerat quam! Quia, sunt numquam autem saepe a distinctio quae quasi sequi ut nam enim ullam voluptates molestias magnam nemo?
             </p>
-            <div class="toolbar header-toolbar">
-              <img src="./assets/icons/github.svg" alt="github" srcset="" />
-              <img src="./assets/icons/linkedin.svg" alt="linkedin" srcset="" />
-              <img src="./assets/icons/x.svg" alt="X" srcset="" />
+            <div class="about__toolbar toolbar">
+              <img class="about__icon" src="./assets/icons/github.svg" alt="github" srcset="" width="32px" height="32px"/>
+              <img class="about__icon" src="./assets/icons/linkedin.svg" alt="linkedin" srcset="" width="32px" height="32px"/>
+              <img class="about__icon" src="./assets/icons/x.svg" alt="X" srcset="" width="32px" height="32px"/>
             </div>
-          </div>
         </div>
       </header>
       <section>
         <div class="work container margin">
           <header>
-            <h2>My Work</h2>
+            <h2 class="work__title heading">My Work</h2>
           </header>
           <div class="project-list">
             <article class="project">
               <div class="image1 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -64,7 +61,7 @@
             <article class="project">
               <div class="image2 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -82,7 +79,7 @@
             <article class="project">
               <div class="image3 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -100,7 +97,7 @@
             <article class="project">
               <div class="image4 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -118,7 +115,7 @@
             <article class="project">
               <div class="image5 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -136,7 +133,7 @@
             <article class="project">
               <div class="image6 image"></div>
               <div class="card-content">
-                <h3>Project Name</h3>
+                <h3 class="heading">Project Name</h3>
                 <div class="toolbar card-toolbar">
                   <img src="./assets/icons/github.svg" alt="github" srcset="" />
                   <img
@@ -157,7 +154,7 @@
       <footer class="footer">
         <div class="footer__body">
           <header>
-            <h2>Contact Me</h2>
+            <h2 class="footer__title heading">Contact Me</h2>
           </header>
           <p>
             Please get in touch if you think our work could be mutually

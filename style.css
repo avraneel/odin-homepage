@@ -41,13 +41,7 @@ img {
   font-display: swap;
 }
 
-.margin {
-  margin: 2em;
-}
-
-h1,
-h2,
-h3 {
+.heading {
   font-family: "Playfair Display";
   font-weight: 400;
 }
@@ -71,7 +65,7 @@ h2 {
   position: relative;
 }
 
-.name {
+.avatar__name {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -83,7 +77,6 @@ h2 {
 }
 
 .avatar img {
-  display: block;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.462);
 }
 
@@ -118,13 +111,16 @@ p {
   box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.about {
+  margin: 2rem;
+}
+
 .about__text {
   font-size: 20px;
   line-height: 2rem;
 }
 
 .image {
-  max-width: 100%;
   object-fit: cover;
   background-color: #fa7ade;
   height: 150px;
@@ -181,6 +177,15 @@ p {
   gap: 2em;
 }
 
+.toolbar {
+  display: flex;
+}
+
+.about__toolbar {
+  justify-content: end;
+  gap: 2em;
+}
+
 /* mobile layout */
 
 @media (max-width: 500px) {
@@ -188,7 +193,7 @@ p {
     text-align: center;
   }
 
-  .profile {
+  .about {
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -204,17 +209,12 @@ p {
     display: none;
   }
 
-  .toolbar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header-toolbar {
+  .about__toolbar {
     margin-top: 1em;
     gap: 2em;
   }
 
-  .header-toolbar img {
+  .about__icon {
     max-height: 32px;
   }
 
@@ -258,6 +258,17 @@ p {
 
 /* Tablet Layout */
 @media (min-width: 500px) and (max-width: 1000px) {
+  .avatar__name {
+    top: 30px;
+    left: 45%;
+    font-size: 26px;
+  }
+
+  .avatar__image {
+    float: left;
+    padding: 2em;
+  }
+
   .footer__icons {
     max-height: 48px;
   }
