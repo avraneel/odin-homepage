@@ -9,32 +9,61 @@
   <body>
     <div class="content">
       <header class="about">
-          <div class="avatar">
-            <picture class="avatar__image">
-              <source media="(width < 480px)" srcset="./assets/img/avatar-600h.jpg">
-              <source media="(width >= 480px)" srcset="./assets/img/avatar-400h.jpg">
-              <img src="./assets/img/avatar-600h.jpg" alt="avatar">
-            </picture>
-            <div class="avatar__name">
-              <h1 class="avatar__title heading">Ashley Williams</h1>
-            </div>
+        <div class="avatar">
+          <picture class="avatar__image">
+            <source
+              media="(width < 480px)"
+              srcset="./assets/img/avatar-600h.jpg"
+            />
+            <source
+              media="(width >= 480px)"
+              srcset="./assets/img/avatar-400h.jpg"
+            />
+            <img src="./assets/img/avatar-600h.jpg" alt="avatar" />
+          </picture>
+          <h1 class="avatar__title heading">Ashley Williams</h1>
+        </div>
+        <div class="about__body container">
+          <h2 class="about__title heading">About Me</h2>
+          <p class="about__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur tenetur aspernatur culpa exercitationem tempore
+            excepturi fugit dignissimos dolore, non, quo tempora architecto vel
+            aut molestiae qui omnis voluptatum saepe eligendi? Modi commodi
+            accusantium ducimus libero odit beatae voluptatum, sit recusandae
+            velit, consequatur error corporis eum, aspernatur sed eveniet alias
+            exercitationem doloribus repellendus. Accusantium autem dolor quis
+            facere provident quam! Consequuntur.
+          </p>
+          <div class="about__toolbar toolbar">
+            <img
+              class="about__icon"
+              src="./assets/icons/github.svg"
+              alt="github"
+              srcset=""
+              width="32px"
+              height="32px"
+            />
+            <img
+              class="about__icon"
+              src="./assets/icons/linkedin.svg"
+              alt="linkedin"
+              srcset=""
+              width="32px"
+              height="32px"
+            />
+            <img
+              class="about__icon"
+              src="./assets/icons/x.svg"
+              alt="X"
+              srcset=""
+              width="32px"
+              height="32px"
+            />
           </div>
-          <div class="about__body container">
-            <h2 class="about__title heading">About Me</h2>
-            <p class="about__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tenetur quae sed ex quasi. Inventore, perferendis! Architecto
-              cupiditate asperiores nemo reiciendis ullam at porro qui
-              veritatis? Perspiciatis eum magni reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea quaerat quam! Quia, sunt numquam autem saepe a distinctio quae quasi sequi ut nam enim ullam voluptates molestias magnam nemo?
-            </p>
-            <div class="about__toolbar toolbar">
-              <img class="about__icon" src="./assets/icons/github.svg" alt="github" srcset="" width="32px" height="32px"/>
-              <img class="about__icon" src="./assets/icons/linkedin.svg" alt="linkedin" srcset="" width="32px" height="32px"/>
-              <img class="about__icon" src="./assets/icons/x.svg" alt="X" srcset="" width="32px" height="32px"/>
-            </div>
         </div>
       </header>
-      <section>
+      <main>
         <div class="work container margin">
           <header>
             <h2 class="work__title heading">My Work</h2>
@@ -150,7 +179,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </main>
       <footer class="footer">
         <div class="footer__body">
           <header>
@@ -166,7 +195,7 @@
               Random Town, California 12345
             </p>
             <br />
-            <p class="footer__contact">
+            <div class="footer__contact">
               <div class="footer__phone">
                 <img
                   class="footer__address-icon"
@@ -178,23 +207,19 @@
               </div>
               <br />
               <div class="footer__mail">
-                <img
-                  class="footer__address-icon"
-                  src=""
-                  alt="mail"
-                  srcset=""
-                />
+                <img class="footer__address-icon" src="" alt="mail" srcset="" />
                 <a href="mailto:ashleywilliams.is.not.real@gmail.com"
                   >ashleywilliams.is.not.real@gmail.com</a
                 >
               </div>
-            </p>
+            </div>
           </address>
-          <div class="footer__iconbar toolbar">
+          <div class="footer__toolbar toolbar">
             <img
               src="./assets/icons/github.svg"
               alt="github"
-              srcset=""
+              width="48px"
+              height="48px"
               class="footer__icons"
             />
             <img
@@ -207,16 +232,23 @@
               src="./assets/icons/x.svg"
               alt="X"
               srcset=""
+              width="48px"
+              height="48px"
               class="footer__icons"
             />
           </div>
         </div>
-        <img
-          class="footer__image"
-          src="assets/img/avatar.jpg"
-          alt=""
-          srcset=""
-        />
+        <picture class="footer__image">
+          <source
+            media="(width < 980px)"
+            srcset="./assets/img/avatar-600h.jpg"
+          />
+          <source
+            media="(width >= 980px)"
+            srcset="./assets/img/avatar-400h.jpg"
+          />
+          <img src="./assets/img/avatar-600h.jpg" alt="avatar" />
+        </picture>
       </footer>
     </div>
   </body>
