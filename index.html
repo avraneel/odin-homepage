@@ -20,8 +20,13 @@
               srcset="./assets/img/avatar-500w.jpg"
             />
             <source
-              media="(width >= 500px)"
+              media="(width >= 500px) and (width <= 1000px)"
               srcset="./assets/img/avatar-400w.jpg"
+            />
+
+            <source
+              media="(width > 1000px)"
+              srcset="./assets/img/avatar-600w.jpg"
             />
             <img src="./assets/img/avatar-500w.jpg" alt="avatar" />
           </picture>
